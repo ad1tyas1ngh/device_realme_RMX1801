@@ -7,7 +7,10 @@
 
 # Non-A/B fstab.qcom variant
 #<src>                                   <mnt_point>            <type> <mnt_flags and options>                          <fs_mgr_flags>
-/dev/block/bootdevice/by-name/system     /                      ext4   ro,barrier=1,async_discard                             wait,verify
+/dev/block/bootdevice/by-name/boot       /boot                  emmc   defaults,async_discard                           defaults
+/dev/block/bootdevice/by-name/recovery   /recovery              emmc   defaults,async_discard                           defaults
+/dev/block/bootdevice/by-name/system     /                      ext4   ro,barrier=1,async_discard                       wait,verify
+/dev/block/bootdevice/by-name/vendor     /vendor                ext4   ro,barrier=1,async_discard                       wait,recoveryonly
 #ifndef VENDOR_EDIT
 #Xuefeng.Peng@PSW.AD.Storage.891919, 2017/10/09, Add for resize function and delete encryptable function
 #/dev/block/bootdevice/by-name/userdata   /data                  ext4   nosuid,nodev,barrier=1,noauto_da_alloc,async_discard,noatime,lazytime   wait,check,forceencrypt=footer,crashcheck,quota,reservedsize=128M
