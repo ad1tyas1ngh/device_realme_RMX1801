@@ -3179,12 +3179,6 @@ vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libtinyxml2_1.so
 
-# Health
-vendor/bin/hw/android.hardware.health@2.0-service
-vendor/bin/hw/android.hardware.health@2.0-service.oppo
-vendor/etc/init/android.hardware.health@2.0-service.oppo.rc
-vendor/etc/init/android.hardware.health@2.0-service.rc
-
 # Keymaster
 product/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
