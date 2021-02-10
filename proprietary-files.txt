@@ -82,7 +82,6 @@ vendor/lib/libqtigef.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/libtinycompress.so
 vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib/soundfx/libdiraceffect.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
@@ -100,7 +99,6 @@ vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libtinycompress.so
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libaudiopreprocessing.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
@@ -156,46 +154,6 @@ vendor/etc/acdbdata/QRD/sdm660-tasha-skus-snd-card/QRD_SKUS_Headset_cal.acdb
 vendor/etc/acdbdata/QRD/sdm660-tasha-skus-snd-card/QRD_SKUS_Speaker_cal.acdb
 vendor/etc/acdbdata/QRD/sdm660-tasha-skus-snd-card/QRD_SKUS_workspaceFile.qwsp
 
-# Audio-Hardware
-vendor/bin/hw/android.hardware.audio@2.0-service
-vendor/etc/init/android.hardware.audio@2.0-service.rc
-vendor/lib/android.hardware.audio.common-util.so
-vendor/lib/android.hardware.audio.common@2.0-util.so
-vendor/lib/android.hardware.audio.common@4.0-util.so
-vendor/lib/android.hardware.audio.common@5.0-util.so
-vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so
-vendor/lib/hw/android.hardware.audio.effect@4.0-impl.so
-vendor/lib/hw/android.hardware.audio.effect@5.0-impl.so
-vendor/lib/hw/android.hardware.audio@2.0-impl.so
-vendor/lib/hw/android.hardware.audio@4.0-impl.so
-vendor/lib/hw/android.hardware.audio@5.0-impl.so
-vendor/lib/hw/audio.primary.default.so
-vendor/lib/hw/audio.primary.sdm660.so
-vendor/lib/hw/audio.r_submix.default.so
-vendor/lib/hw/audio.usb.default.so
-vendor/lib/soundfx/libqcompostprocbundle.so
-vendor/lib/soundfx/libqcomvisualizer.so
-vendor/lib/soundfx/libqcomvoiceprocessing.so
-vendor/lib/soundfx/libvolumelistener.so
-vendor/lib64/android.hardware.audio.common-util.so
-vendor/lib64/android.hardware.audio.common@2.0-util.so
-vendor/lib64/android.hardware.audio.common@4.0-util.so
-vendor/lib64/android.hardware.audio.common@5.0-util.so
-vendor/lib64/hw/android.hardware.audio.effect@2.0-impl.so
-vendor/lib64/hw/android.hardware.audio.effect@4.0-impl.so
-vendor/lib64/hw/android.hardware.audio.effect@5.0-impl.so
-vendor/lib64/hw/android.hardware.audio@2.0-impl.so
-vendor/lib64/hw/android.hardware.audio@4.0-impl.so
-vendor/lib64/hw/android.hardware.audio@5.0-impl.so
-vendor/lib64/hw/audio.primary.default.so
-vendor/lib64/hw/audio.primary.sdm660.so
-vendor/lib64/hw/audio.r_submix.default.so
-vendor/lib64/hw/audio.usb.default.so
-vendor/lib64/soundfx/libqcompostprocbundle.so
-vendor/lib64/soundfx/libqcomvisualizer.so
-vendor/lib64/soundfx/libqcomvoiceprocessing.so
-vendor/lib64/soundfx/libvolumelistener.so
-
 # Bluetooth
 product/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 product/lib/vendor.oppo.hardware.bluetooth_audio@1.0.so
@@ -212,7 +170,6 @@ product/lib64/vendor.qti.hardware.btconfigstore@1.0.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
-vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
@@ -226,7 +183,6 @@ vendor/lib/libbtnv.so
 vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so
-vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
@@ -3336,7 +3292,6 @@ vendor/lib64/hw/android.hardware.light@2.0-impl.so
 vendor/lib64/hw/lights.sdm660.so
 
 # Listen
-vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so
 vendor/lib/hw/sound_trigger.primary.sdm660.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libgcs-calwrapper.so
@@ -4597,7 +4552,6 @@ vendor/euclid/version.18326/vendor_overlay/29/lib64/liboemcrypto.so
 vendor/euclid_build.prop
 vendor/lib/android.frameworks.faceservice@1.0.so
 vendor/lib/btaudio_offload_if.so
-vendor/lib/liba2dpoffload.so
 vendor/lib/libalipay_factory.so
 vendor/lib/libarcvs.dep.so
 vendor/lib/libarcvs.so
@@ -4606,16 +4560,13 @@ vendor/lib/libAR_jni.so
 vendor/lib/libavcodec.so
 vendor/lib/libavformat.so
 vendor/lib/libavutil.so
-vendor/lib/libbatterylistener.so
 vendor/lib/libblur_channel.so
 vendor/lib/libcacertclient.so
 vendor/lib/libcirrusspkrprot.so
-vendor/lib/libcomprcapture.so
 vendor/lib/libcpp_offline_pproc.so
 vendor/lib/libcryptfshwcommon.so
 vendor/lib/libcryptfshwhidl.so
 vendor/lib/libdiagjni.so
-vendor/lib/libexthwplugin.so
 vendor/lib/libfastcrc.so
 vendor/lib/libffmpeg_omx.so
 vendor/lib/libffmpeg_utils.so
@@ -4623,7 +4574,6 @@ vendor/lib/libfilter.so
 vendor/lib/libfusionLibrary.so
 vendor/lib/libhdmiedid.so
 vendor/lib/libhdmipassthru.so
-vendor/lib/libhfp.so
 vendor/lib/libhypnusclient.so
 vendor/lib/libjnihelper.so
 vendor/lib/libnativehelpers.so
@@ -4641,8 +4591,6 @@ vendor/lib/librftoolkit.so
 vendor/lib/librk_x264.so
 vendor/lib/librpmbengclient.so
 vendor/lib/libSCES.so
-vendor/lib/libsndmonitor.so
-vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
 vendor/lib/libstagefright_amrnb_common.so
 vendor/lib/libstagefright_enc_common.so
@@ -4690,29 +4638,24 @@ vendor/lib/libx264.so
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
 vendor/lib/vendor.qti.hardware.cryptfshw@1.0.so
 vendor/lib64/btaudio_offload_if.so
-vendor/lib64/liba2dpoffload.so
 vendor/lib64/libalipay_factory.so
 vendor/lib64/libappclassifier.so
 vendor/lib64/libAR_jni.so
 vendor/lib64/libavcodec.so
 vendor/lib64/libavformat.so
 vendor/lib64/libavutil.so
-vendor/lib64/libbatterylistener.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libcert_parse.wpa_s.so
 vendor/lib64/libcirrusspkrprot.so
-vendor/lib64/libcomprcapture.so
 vendor/lib64/libcryptfshwcommon.so
 vendor/lib64/libcryptfshwhidl.so
 vendor/lib64/libdiagjni.so
-vendor/lib64/libexthwplugin.so
 vendor/lib64/libfastcrc.so
 vendor/lib64/libffmpeg_omx.so
 vendor/lib64/libffmpeg_utils.so
 vendor/lib64/libgameoptfeature.so
 vendor/lib64/libhdmiedid.so
 vendor/lib64/libhdmipassthru.so
-vendor/lib64/libhfp.so
 vendor/lib64/libhypnusclient.so
 vendor/lib64/libjnihelper.so
 vendor/lib64/libnativehelpers.so
@@ -4725,8 +4668,6 @@ vendor/lib64/librftoolkit.so
 vendor/lib64/librk_x264.so
 vendor/lib64/librpmbengclient.so
 vendor/lib64/libskewknob.so
-vendor/lib64/libsndmonitor.so
-vendor/lib64/libspkrprot.so
 vendor/lib64/libssrec.so
 vendor/lib64/libstagefright_softomx.so
 vendor/lib64/libstagefright_soft_rkavcenc.so
