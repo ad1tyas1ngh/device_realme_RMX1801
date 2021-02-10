@@ -4064,16 +4064,10 @@ product/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
 vendor/bin/fstman
-vendor/bin/hw/android.hardware.wifi@1.0-service
 vendor/bin/iwpriv
-vendor/etc/init/android.hardware.wifi@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
-vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so
-vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.1.so
-vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so
-vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.1.so
 vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
 vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
 vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
@@ -4280,7 +4274,6 @@ vendor/lib/libvndfwk_detect_jni.qti.so
 vendor/lib/libvoh264enc.so
 vendor/lib/libvorbisidec.so
 vendor/lib/libvpx.so
-vendor/lib/libwifi-hal-ctrl.so
 vendor/lib/libx264.so
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
 vendor/lib/vendor.qti.hardware.cryptfshw@1.0.so
@@ -4324,7 +4317,6 @@ vendor/lib64/libswscale.so
 vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libvndfwk_detect_jni.qti.so
 vendor/lib64/libvoh264enc.so
-vendor/lib64/libwifi-hal-ctrl.so
 vendor/lib64/libx264.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.cryptfshw@1.0.so
