@@ -100,6 +100,7 @@ TARGET_BOARD_PLATFORM := sdm660
 
 # SEPolicy
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
