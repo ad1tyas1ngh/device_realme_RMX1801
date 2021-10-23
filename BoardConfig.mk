@@ -100,6 +100,7 @@ TARGET_BOARD_PLATFORM := sdm660
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # SEPolicy
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
