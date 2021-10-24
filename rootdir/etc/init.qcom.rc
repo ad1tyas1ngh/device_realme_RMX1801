@@ -81,6 +81,10 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
+
 #ifdef VENDOR_EDIT
 #Guoqiang.Jiang@PSW.MM.Display.Service.Feature,2019/04/29,add for display
     chown system system /sys/devices/virtual/graphics/fb0/cabc
@@ -111,6 +115,9 @@ on init
 
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
@@ -147,6 +154,10 @@ on early-boot
 
     chown system system /mnt/vendor/persist/data/pfm/licenses
     chmod 0775 /mnt/vendor/persist/data/pfm/licenses
+
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
 
 on boot
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
@@ -281,6 +292,9 @@ on boot
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
 
     # Create directory used for dump collection
     mkdir /data/vendor/ssrdump 0770 root system
@@ -1396,3 +1410,31 @@ on property:oppo.wifirftest.enable=1
 on property:oppo.wifirftest.enable=0
     stop wifirfmodetest
 #endif
+
+# Logcat Services
+service boot_log /system/bin/logcat -b all -D -f /cache/boot_log_full.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_log_crash /system/bin/logcat -b crash -D -f /cache/boot_log_crash.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_log_kernel /system/bin/logcat -b kernel -D -f /cache/boot_log_kernel.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+# Stop the logger service
+    stop boot_log
+    stop boot_log_crash
+    stop boot_log_kernel
